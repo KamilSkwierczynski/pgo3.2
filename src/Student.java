@@ -33,12 +33,4 @@ public class Student {
         }
         return suma;
     }
-
-    public double Srednia () throws IllegalArgumentException {
-        if (this.grades.isEmpty())
-            throw new IllegalArgumentException("Student nie ma ocen");
-        else if (grades.size() > 20)
-            throw new IllegalArgumentException("Student może mieć maksymalnie 20 ocen.");
-        return LiczenieSumy() / grades.size();
-    }
 }
